@@ -1,0 +1,16 @@
+﻿{
+    "en": {
+        "home": "Home",
+        "about": "About us",
+        "contact": "Contact",
+        "dutch": "Dutch",
+        "english":  "English"
+    },
+    "nl": {
+        "home": "Home",
+        "about": "Over ons",
+        "contact": "Contact",
+        "dutch": "Nederlands",
+        "english": "Engels"
+    }
+}
