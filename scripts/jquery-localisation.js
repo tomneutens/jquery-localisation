@@ -50,18 +50,17 @@
         });
     };
 
-    
+    localisation.initialize = function(translationFile, defLang) {
+        defLang = defLang || "en";
+        localisation.SetLanguage(defLang);
+        localisation.SetTranslationFile(translationFile);
+        localisation.InitAndRunTranslation();
+
+        $("[data-translate-language]").click(function () {
+            localisation.RunTranslation($(this).attr("data-translate-language"));
+        });
+    }
 
 }(window.localisation = window.localisation || {}, jQuery));
 
 
-$(document).ready(function () {
-
-    localisation.SetLanguage("en");
-    localisation.SetTranslationFile("translation_config/translation.json")
-    localisation.InitAndRunTranslation();
-
-    $("[data-translate-language]").click(function () {
-        localisation.RunTranslation($(this).attr("data-translate-language"));
-    });
-});
