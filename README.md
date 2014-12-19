@@ -40,6 +40,25 @@ The initialize function has two parameters.
 Add the data-translate-key="key_used_in_the_translation_file" to the html tags that have to be translated. Provide a value associated with the key for each language. These key value pairs are defined in the translation file.
 Add the data-translate-language="some_language" attribute to an element that will be used to translate the site. For example if you add the data-translate-language="en" attribute to a button the site will be translated into English when the button is clicked.
 
+For example:
+
+```html
+<header>
+            <nav>
+                <ul>
+                    <li data-translate-key="home"></li>
+                    <li data-translate-key="about"></li>
+                    <li data-translate-key="contact"></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main">
+            <button data-translate-key="english" data-translate-language="en"></button>
+            <button data-translate-key="dutch" data-translate-language="nl"></button>
+        </div>
+
+```
+
 5) Add the translations into the translation file. This is a json file, in this file you have a list of key value pairs for each language. The keys for each language are identical, the values provide the translation for that language.
 
 For example:
