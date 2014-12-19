@@ -8,25 +8,25 @@ Steps to use the library
 
 1) Import the JQuery library using a script tag in the head of your html page. If you use the google cdn it would look like this:
 
-'''html
+```html
 	<script src="HTTP://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-'''
+```
 
 2) Import the jquery-localisation script:
 
-'''html
+```html
 	<script src="scripts/jquery-localisation.js"></script>
-'''
+```
 
 3) Initialize jquery-localisation by adding the following script to your html:
 
-'''html
+```html
 	<script>
         $(document).ready(function () {
             localisation.initialize("translation_config/translation.json", "en");
         });
     </script>
-'''
+```
 
 The initialize function has two parameters.
  - The first parameter refers to the file that contains the translations.
@@ -44,7 +44,7 @@ Add the data-translate-language="some_language" attribute to an element that wil
 
 For example:
 
-'''json
+```json
 {
     "en": {
         "home": "Home",
@@ -61,6 +61,6 @@ For example:
         "english": "Engels"
     }
 }
-'''
+```
 	
 
